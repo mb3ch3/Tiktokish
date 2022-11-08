@@ -345,8 +345,6 @@ export default {
 .image:hover{
   filter: none;
 }
-.my-card:hover{
-}
 .drawer-text {
   margin: 2vh 3vh;
 }
