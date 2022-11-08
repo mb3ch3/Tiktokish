@@ -1,4 +1,8 @@
-# Quasar App (quasar-project)
+# Tiktokish
+A clone for the tiktok web app using quasar framework + vue js. Currently working on the web, before finalizing on the mobile view.
+Utilizing native features of Quasar.
+\#Frontend
+
 
 A Quasar Project
 
