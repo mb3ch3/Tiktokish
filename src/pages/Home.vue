@@ -2,20 +2,152 @@
   <q-page padding>
     <q-splitter
       v-model="splitterModel"
-      style="height: 80vh"
+      :separator-style="{ backgroundColor: '#ffffff', marginLeft : '20px', cursor : 'default' }"
+      limits="[50, 50]"
     >
-    <template v-slot:before>
+<template v-slot:before >
+
+  <div class="lefter">
+    <q-scroll-area
+      :thumb-style="thumbStyle"
+      :bar-style="barStyle"
+      style="height: 60vh; width: 250px;"
+    >
+      <div style="margin-left: 0;">
+        <q-tabs 
+              v-model="tab" 
+              vertical
+              indicator-color="transparent"
+              active-color="pink"
+              >
+              <q-tab icon="home" label="For You" name="home" :content-class="classs">
+                <div exact class="trial">
+                    
+                </div>
+              </q-tab>
+                
+
+              <q-tab icon="people" label="Following"  name="following" >
+                <div exact class="trial">
+                    
+                </div>
+              </q-tab>
+              <q-tab icon="camera" label="Live"  name="live">
+                <div exact class="trial">
+                  
+                </div>
+              </q-tab>
+              </q-tabs>
+      </div>
+      <q-separator inset />
+      <div>
+        disjdois
+      </div>
+    </q-scroll-area>
+  </div>
+</template>
+<template v-slot:after>
+  <div class="righter">
+    <div style=" height: 100%;">
+      <q-tab-panels
+          v-model="tab"
+          animated
+          swipeable
+          vertical
+          transition-prev="jump-up"
+          transition-next="jump-up"
+        >
+          <q-tab-panel name="home" >
+            <div class="text-h4 q-mb-md">Mails</div>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis praesentium cumque magnam odio iure quidem, quod illum numquam possimus obcaecati commodi minima assumenda consectetur culpa fuga nulla ullam. In, libero.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis praesentium cumque magnam odio iure quidem, quod illum numquam possimus obcaecati commodi minima assumenda consectetur culpa fuga nulla ullam. In, libero.</p>
+          </q-tab-panel>
+
+          <q-tab-panel name="following">
+            <div class="fit row wrap justify-start items-start content-start">
+                <q-card class="my-card text-white">
+                  <q-img class=" image" src="../assets/img/toll.png"/>
+                  <div class="smally absolute-bottom" align="center"></div>
+                  <p style="font-weight: bold;" class=" username absolute-bottom text-center">Burna Boy</p>
+                  <p class=" account absolute-bottom text-center">burnaboyofficial</p>
+                  <div class=" bb absolute-bottom" align="center">
+                    <q-btn style="background: #FE2C55; color: white" ripple="true" label="FOLLOW" />
+                  </div>
+                </q-card>
+
+                <q-card class="my-card text-white">
+                  <q-video 
+                  :ratio="0.795"
+                  frameborder="0"
+                  src="https://assets.mixkit.co/videos/preview/mixkit-going-down-a-curved-highway-through-a-mountain-range-41576-large.mp4"/>
+                  <div class="smally absolute-bottom" align="center"></div>
+                  <p style="font-weight: bold;" class=" username absolute-bottom text-center">Burna Boy</p>
+                  <p class=" account absolute-bottom text-center">burnaboyofficial</p>
+                  <div class=" bb absolute-bottom" align="center">
+                    <q-btn style="background: #FE2C55; color: white" ripple="true" label="FOLLOW" />
+                  </div>
+                </q-card>
+
+                <q-card class="my-card text-white">
+                  <q-img class=" image" src="../assets/img/toll.png">
+                  </q-img>
+                  <div class="smally absolute-bottom" align="center"></div>
+                  <p style="font-weight: bold;" class=" username absolute-bottom text-center">Burna Boy</p>
+                  <p class=" account absolute-bottom text-center">burnaboyofficial</p>
+                  <div class=" bb absolute-bottom" align="center">
+                    <q-btn style="background: #FE2C55; color: white" ripple="true" label="FOLLOW" />
+                  </div>
+                </q-card>
+
+                <q-card class="my-card text-white">
+                  <q-video 
+                  :ratio="0.795"
+                  frameborder="0"
+                  src="https://assets.mixkit.co/videos/preview/mixkit-going-down-a-curved-highway-through-a-mountain-range-41576-large.mp4"/>
+                </q-card>
+                <q-card class="my-card text-white">
+                  <q-img class=" image" src="../assets/img/toll.png">
+                  </q-img>
+                  <p style="font-weight: bold;" class=" username absolute-bottom text-center">Burna Boy</p>
+                  <p class=" account absolute-bottom text-center">burnaboyofficial</p>
+                  <div class=" bb absolute-bottom" align="center">
+                    <q-btn style="background: #FE2C55; color: white" ripple="true" label="FOLLOW" />
+                  </div>
+                </q-card>
+
+                <q-card class="my-card text-white">
+                  <q-video 
+                  :ratio="0.795"
+                  frameborder="0"
+                  src="https://assets.mixkit.co/videos/preview/mixkit-going-down-a-curved-highway-through-a-mountain-range-41576-large.mp4"/>
+                </q-card>
+              
+            </div>
+          </q-tab-panel>
+
+          <q-tab-panel name="live">
+            <div class="text-h4 q-mb-md">Movies</div>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis praesentium cumque magnam odio iure quidem, quod illum numquam possimus obcaecati commodi minima assumenda consectetur culpa fuga nulla ullam. In, libero.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis praesentium cumque magnam odio iure quidem, quod illum numquam possimus obcaecati commodi minima assumenda consectetur culpa fuga nulla ullam. In, libero.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis praesentium cumque magnam odio iure quidem, quod illum numquam possimus obcaecati commodi minima assumenda consectetur culpa fuga nulla ullam. In, libero.</p>
+          </q-tab-panel>
+        </q-tab-panels>
+    </div>
+  </div>
+</template>
+
+    <!-- <template v-slot:before>
       <div class="q-ma-md">
         <q-scroll-area
           :thumb-style="thumbStyle"
           :bar-style="barStyle"
-          style="height: 75vh; max-width: 320px;"
+          style="height: 75vh; "
         >
-          <div class="fit row wrap justify-start" style="width: 100px">
+          <div class="fit row wrap" >
             <q-tabs 
               v-model="tab" 
               vertical
-              indicator-color="red"
+              indicator-color="grey"
               >
               <q-tab name="home" >
                 <q-item exact>
@@ -48,7 +180,7 @@
                 </q-item>
               </q-tab>
   
-              <q-separator inset />
+              <q-separator />
   
               <div class="row items-center justify-start" style="width: auto">
                 <p class="drawer-text">
@@ -63,7 +195,7 @@
                 />
               </div>
   
-              <q-separator inset />
+              <q-separator  />
   
               <q-tab>
                 <q-item>
@@ -209,18 +341,24 @@
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis praesentium cumque magnam odio iure quidem, quod illum numquam possimus obcaecati commodi minima assumenda consectetur culpa fuga nulla ullam. In, libero.</p>
           </q-tab-panel>
         </q-tab-panels>
-    </template>
+    </template> -->
     </q-splitter>
-    <q-dialog v-model="pop">
+
+    <q-dialog v-model="pop" transition-show="flip-down" transition-hide="flip-up">
       <q-card>
         <q-card-section align="center">
-          Log in to TikTok
+        
+            Log in to TikTok
+            <!-- <q-btn dense flat icon="close" v-close-popup>
+            <q-tooltip class="bg-white text-primary">Close</q-tooltip>
+          </q-btn> -->
+        
         </q-card-section>
         <q-card-section>
           <q-list>
             <q-item>
               <q-item-section>
-                <q-btn name="google" icon="code" outline label="Use QR Code"/>
+                <q-btn name="google" icon="code" class="test" outline label="Use QR Code"/>
               </q-item-section>
             </q-item>
             <q-item>
@@ -264,7 +402,7 @@
   </q-page>
 </template>
 
-<script>
+<script scoped>
 import { ref } from 'vue';
 import  { useQuasar } from 'quasar';
 export default {
@@ -282,6 +420,7 @@ export default {
   },
   data() {
     return {
+      activeColor:"#FE2C55",
       pop: false,
       tab: ref('home'),
       splitterModel: ref(25),
@@ -294,20 +433,56 @@ export default {
         backgroundColor: "#33333320",
         width: "5px",
         opacity: 0.75,
+        // marginLeft: "20px"
       },
 
       barStyle: {
         right: "2px",
         borderRadius: "9px",
-        backgroundColor: "#FFFFFF",
+        backgroundColor: "#ffffff",
         width: "9px",
         opacity: 0.2,
       },
+      classs:{
+        display: "flex"
+      }
     };
   },
 };
 </script>
 <style scoped>
+.lefter{
+  background: white;
+  margin-left: 30px;
+  padding-left: 10px;
+  height: 100%;
+
+}
+.righter{
+  /* background: greenyellow; */
+  margin-left: 10px;
+  padding-left: 10px;
+  height: 100%;
+}
+
+
+.trial{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  /* background: blue; */
+  width: 200px;
+  margin-left: 0;
+  padding-left: 0;
+  gap:10px;
+  font-weight: bold;
+  text-transform: capitalize;
+  color: black;
+}
+
+.test{
+  width: 330px;
+}
 .smally{
   width: 40px;
   height: 40px;
