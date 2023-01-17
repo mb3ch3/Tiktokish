@@ -156,82 +156,11 @@
           transition-next="jump-up"
         >
           <q-tab-panel name="home" >
-            <div >Mails</div>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis praesentium cumque magnam odio iure quidem, quod illum numquam possimus obcaecati commodi minima assumenda consectetur culpa fuga nulla ullam. In, libero.</p>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis praesentium cumque magnam odio iure quidem, quod illum numquam possimus obcaecati commodi minima assumenda consectetur culpa fuga nulla ullam. In, libero.</p>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis praesentium cumque magnam odio iure quidem, quod illum numquam possimus obcaecati commodi minima assumenda consectetur culpa fuga nulla ullam. In, libero.</p>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis praesentium cumque magnam odio iure quidem, quod illum numquam possimus obcaecati commodi minima assumenda consectetur culpa fuga nulla ullam. In, libero.</p>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis praesentium cumque magnam odio iure quidem, quod illum numquam possimus obcaecati commodi minima assumenda consectetur culpa fuga nulla ullam. In, libero.</p>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis praesentium cumque magnam odio iure quidem, quod illum numquam possimus obcaecati commodi minima assumenda consectetur culpa fuga nulla ullam. In, libero.</p>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis praesentium cumque magnam odio iure quidem, quod illum numquam possimus obcaecati commodi minima assumenda consectetur culpa fuga nulla ullam. In, libero.</p>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis praesentium cumque magnam odio iure quidem, quod illum numquam possimus obcaecati commodi minima assumenda consectetur culpa fuga nulla ullam. In, libero.</p>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis praesentium cumque magnam odio iure quidem, quod illum numquam possimus obcaecati commodi minima assumenda consectetur culpa fuga nulla ullam. In, libero.</p>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis praesentium cumque magnam odio iure quidem, quod illum numquam possimus obcaecati commodi minima assumenda consectetur culpa fuga nulla ullam. In, libero.</p>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis praesentium cumque magnam odio iure quidem, quod illum numquam possimus obcaecati commodi minima assumenda consectetur culpa fuga nulla ullam. In, libero.</p>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis praesentium cumque magnam odio iure quidem, quod illum numquam possimus obcaecati commodi minima assumenda consectetur culpa fuga nulla ullam. In, libero.</p>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis praesentium cumque magnam odio iure quidem, quod illum numquam possimus obcaecati commodi minima assumenda consectetur culpa fuga nulla ullam. In, libero.</p>
+            <home-content/>
           </q-tab-panel>
 
           <q-tab-panel name="following">
-            <div class="following-cards">
-                <q-card class="my-card text-white">
-                  <q-img class=" image" src="../assets/img/toll.png"/>
-                  <div class="smally absolute-bottom" align="center"></div>
-                  <p style="font-weight: bold;" class=" username absolute-bottom text-center">Burna Boy</p>
-                  <p class=" account absolute-bottom text-center">burnaboyofficial</p>
-                  <div class=" bb absolute-bottom" align="center">
-                    <q-btn style="background: #FE2C55; color: white" ripple="true" label="FOLLOW" />
-                  </div>
-                </q-card>
-
-                <q-card class="my-card text-white">
-                  <q-video 
-                  :ratio="0.795"
-                  frameborder="0"
-                  src="https://assets.mixkit.co/videos/preview/mixkit-going-down-a-curved-highway-through-a-mountain-range-41576-large.mp4"/>
-                  <div class="smally absolute-bottom" align="center"></div>
-                  <p style="font-weight: bold;" class=" username absolute-bottom text-center">Burna Boy</p>
-                  <p class=" account absolute-bottom text-center">burnaboyofficial</p>
-                  <div class=" bb absolute-bottom" align="center">
-                    <q-btn style="background: #FE2C55; color: white" ripple="true" label="FOLLOW" />
-                  </div>
-                </q-card>
-
-                <q-card class="my-card text-white">
-                  <q-img class=" image" src="../assets/img/toll.png">
-                  </q-img>
-                  <div class="smally absolute-bottom" align="center"></div>
-                  <p style="font-weight: bold;" class=" username absolute-bottom text-center">Burna Boy</p>
-                  <p class=" account absolute-bottom text-center">burnaboyofficial</p>
-                  <div class=" bb absolute-bottom" align="center">
-                    <q-btn style="background: #FE2C55; color: white" ripple="true" label="FOLLOW" />
-                  </div>
-                </q-card>
-
-                <q-card class="my-card text-white">
-                  <q-video 
-                  :ratio="0.795"
-                  frameborder="0"
-                  src="https://assets.mixkit.co/videos/preview/mixkit-going-down-a-curved-highway-through-a-mountain-range-41576-large.mp4"/>
-                </q-card>
-                <q-card class="my-card text-white">
-                  <q-img class=" image" src="../assets/img/toll.png">
-                  </q-img>
-                  <p style="font-weight: bold;" class=" username absolute-bottom text-center">Burna Boy</p>
-                  <p class=" account absolute-bottom text-center">burnaboyofficial</p>
-                  <div class=" bb absolute-bottom" align="center">
-                    <q-btn style="background: #FE2C55; color: white" ripple="true" label="FOLLOW" />
-                  </div>
-                </q-card>
-
-                <q-card class="my-card text-white">
-                  <q-video 
-                  :ratio="0.795"
-                  frameborder="0"
-                  src="https://assets.mixkit.co/videos/preview/mixkit-going-down-a-curved-highway-through-a-mountain-range-41576-large.mp4"/>
-                </q-card>
-              
-            </div>
+            <following-content />
           </q-tab-panel>
 
           <q-tab-panel name="live">
@@ -305,7 +234,10 @@
 <script scoped>
 import { ref } from 'vue';
 import  { useQuasar } from 'quasar';
+import HomeContent from 'src/components/HomeContent.vue';
+import FollowingContent from 'src/components/FollowingContent.vue'
 export default {
+  components: { HomeContent, FollowingContent },
   setup(){
     const $q = useQuasar()
     return {
@@ -368,7 +300,7 @@ export default {
     tabhome(){
       this.tab = "home"
       this.isactive1 = true
-      this.isactive2 = fasle
+      this.isactive2 = false
       this.isactive3 = false
 
     },
@@ -405,10 +337,7 @@ export default {
   padding-left: 10px;
   height: 100%;
 }
-.following-cards{
-  display: grid;
-  grid-template-columns: auto auto auto;
-}
+
 
 .trial{
   display: flex;
@@ -429,15 +358,7 @@ export default {
 .test{
   width: 330px;
 }
-.smally{
-  width: 40px;
-  height: 40px;
-  border-radius: 50% !important;
-  background: #FE2C55;
-  bottom: 100px;
-  left: 42.5%;
 
-}
 .suggested{
   display: grid;
   grid-template-columns: .5fr 4fr;
@@ -461,31 +382,7 @@ export default {
   margin-bottom: 8px;
   cursor: pointer
 }
-.bb{
-  bottom: 10px;
-}
-.my-card{
-  min-width: 100px;
-  min-height: 100px;
-  border-radius: 20px;
-  margin: 10px;
-  position: relative;
-}
-.my-card p{
-  z-index: 3;
-  color: white;
-  filter: contrast(100);
-}
-.image{
-  filter: brightness(80%);
-}
-.image:hover{
-  filter: none;
-}
 
-.drawer-text2 {
-  margin: 2vh 3vh 2vh -14vh;
-}
 .drawer-text3 {
   opacity: 0.6;font-size: larger;font-weight: light;
 }
