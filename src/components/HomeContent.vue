@@ -1,6 +1,10 @@
 <template>
   <div>
     <SingleContent/>
+    <SingleContent/>
+    <SingleContent/>
+    <SingleContent/>
+
   </div>
 </template>
 
@@ -8,7 +12,12 @@
 import SingleContent from './SingleContent.vue';
 
 export default {
-    components: { SingleContent }
+    components: { SingleContent },
+    data(){
+        return{
+
+        }
+    }
 }
 </script>
 

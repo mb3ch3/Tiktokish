@@ -15,7 +15,7 @@
             <!-- <iframe src="https://giphy.com/embed/IRFQYGCokErS0" width="360" height="500" frameBorder="0" class="giphy-embed video" allowFullScreen></iframe> -->
             <!-- <q-video src="https://www.pexels.com/video/repetitive-footage-of-a-woman-holding-a-mirror-ball-3444227/" /> -->
             <!-- <q-video :ratio="16/17" src="https://giphy.com/embed/IRFQYGCokErS0"></q-video> -->
-            <video width="280" height="460" controls>
+            <video width="300" height="500" controls autoplay muted loop playsinline>
                 <source src="../assets/video.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
@@ -28,14 +28,38 @@
 </template>
 
 <script>
-export default {
+
+window.addEventListener('load', videoScroll);
+window.addEventListener('scroll', videoScroll);
+
+function videoScroll() {
+
+  if ( document.querySelectorAll('video[autoplay]').length > 0) {
+    var windowHeight = window.innerHeight,
+        videoEl = document.querySelectorAll('video[autoplay]');
+
+    for (var i = 0; i < videoEl.length; i++) {
+
+      var thisVideoEl = videoEl[i],
+          videoHeight = thisVideoEl.clientHeight,
+          videoClientRect = thisVideoEl.getBoundingClientRect().top;
+
+      if ( videoClientRect <= ( (windowHeight) - (videoHeight*.5) ) && videoClientRect >= ( 0 - ( videoHeight*.5 ) ) ) {
+        thisVideoEl.play();
+      } else {
+        thisVideoEl.pause();
+      }
+
+    }
+  }
 
 }
 </script>
 
+
+
 <style scoped>
 .content{
-    border: 2px solid ;
     height: 90vh;
     display:grid;
     grid-template-columns: 1fr 3fr 1fr;
@@ -60,7 +84,7 @@ export default {
     justify-content: flex-start;
 }
 .middle div{
-    border: 1px hotpink solid;
+    /* border: 1px hotpink solid; */
 }
 
 .heading{
